@@ -33,7 +33,8 @@ def cantidad_filmaciones_mes(mes: str): #Definimos la función
     #Creamos un manejador de errores, esto por si hay algún problema, en específico con la lectura del archivo
     try:
         #Leemos el archivo CSV y cargargamos los datos
-        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+        #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
 
         #Contamos el número de veces que aparece el mes proporcionado por el usuario
         cantidad = df_movies['release_month'].str.lower().value_counts()[mes.lower()]
@@ -62,7 +63,8 @@ def cantidad_filmaciones_dia(dia: str):
     
     try:
         #Leemos el archivo CSV y cargargamos los datos
-        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+        #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
 
         #Contamos el número de veces que aparece el mes proporcionado por el usuario (lo mismo que la función anterior)
         cantidad_d = df_movies['release_day'].str.lower().value_counts()[dia.lower()]
@@ -86,7 +88,8 @@ def score_titulo(titulo_de_la_filmacion: str):
     
     try:
         #Leemos el archivo CSV y cargargamos los datos
-        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+        #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
         
         #Filtramos el DataFrame por el título de la filmación ingresada por el usuario
         filtro = df_movies['title'].str.lower() == titulo_de_la_filmacion.lower()
@@ -110,7 +113,8 @@ def score_titulo(titulo_de_la_filmacion: str):
 def votos_titulo(titulo_de_la_filmacion: str):
     try:
         #Leemos el archivo CSV y cargargamos los datos
-        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+        #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
         
         #Filtramos nuestro dataset por el título de la filmación
         filtro = df_movies['title'].str.lower() == titulo_de_la_filmacion.lower()
@@ -137,7 +141,8 @@ def votos_titulo(titulo_de_la_filmacion: str):
 def get_actor(nombre_actor: str):
     try:
         #Leemos el archivo CSV y cargargamos los datos
-        df_cast = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/cast_2 (con indice).csv', encoding='latin-1')
+        #df_cast = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/cast_2 (con indice).csv', encoding='latin-1')
+        df_cast = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\cast_2 (con indice) - copia.csv', encoding='latin-1')
         
         #Filtramos las filas con el nombre del actor ingresado
         actor_rows = df_cast[df_cast['name'].str.lower() == nombre_actor.lower()]
@@ -147,7 +152,8 @@ def get_actor(nombre_actor: str):
             return f"No se encontró información para el actor {nombre_actor}"
         
         #Leemos el archivo 'movies.csv' para obtener el retorno y contar las películas
-        df_movies = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/movies_limpio (real) - copia.csv', encoding='latin-1')
+        #df_movies = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/movies_limpio (real) - copia.csv', encoding='latin-1')
+        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
         
         # Filtrar las filas de las películas en las que el actor participó por el ID del actor
         movies_rows = df_movies[df_movies['id'].isin(actor_rows['id'])]
@@ -177,7 +183,8 @@ def get_actor(nombre_actor: str):
 def get_director(nombre_director: str):
     try:
         #Leemos el archivo CSV y cargargamos los datos
-        df_crew = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/crew_2 (con indice).csv', encoding='utf-8')
+        #df_crew = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/crew_2 (con indice).csv', encoding='utf-8')
+        df_crew = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\crew_2 (con indice) - copia.csv', encoding='utf-8')
         
         # Filtrar las filas del director deseado por nombre y trabajo como director
         director_rows = df_crew[(df_crew['name'] == nombre_director) & (df_crew['job'] == 'Director')]
@@ -189,7 +196,8 @@ def get_director(nombre_director: str):
         director_id = director_rows['id'].values[0]  # Obtener el ID del director
         
         #Leemos el siguiente archivo CSV y cargargamos los datos
-        df_movies = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/movies_limpio (real) - copia.csv', encoding='utf-8')
+        #df_movies = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/movies_limpio (real) - copia.csv', encoding='utf-8')
+        df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv', encoding='utf-8')
         
         # Filtrar las filas de las películas del director por el ID del director
         director_films = df_movies[df_movies['id'].isin(director_rows['id'])]
@@ -229,7 +237,8 @@ def get_director(nombre_director: str):
 
 # ML #HECHO
 #Cargamos el conjunto de datos de películas adecuado
-movies_data = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+#movies_data = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
+movies_data = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
 
 #Realizamos el procesamiento de los datos
 movies_data.fillna('', inplace=True)
