@@ -2,4 +2,3 @@ fastapi
 pandas
 flask
 scikit-learn
-python
