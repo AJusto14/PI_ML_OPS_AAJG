@@ -131,7 +131,7 @@ Cada una de las transformaciones se realizó en Python, con excepción de la pri
 Imagen de un hallazgo (imagen de la gráfica).
 <br>
 <p align="center">
-<img src="https://github.com/HX-PRomero/PI_ML_OPS/raw/main/src/DiagramaConceptualDelFlujoDeProcesos.png"  height=500>
+<img src="https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/src/._output.png"  height=500>
 </p>
 <br>
 
@@ -241,7 +241,7 @@ Pero, quizá se pregunten, porque no se eligió un algoritmo visto en clase, por
 3. *Interpretación de resultados*: En el enfoque basado en contenido, las recomendaciones se pueden explicar fácilmente al usuario en términos de las características de las películas que influyeron en la recomendación. Esto puede ayudar a generar confianza y comprensión por parte del usuario, ya que las recomendaciones se basan en sus preferencias de género, actores favoritos, etc. En el caso de un enfoque de clasificación, puede ser más difícil explicar las recomendaciones en términos de las razones específicas detrás de ellas.
 
 <br>
-Este fue mi resultado de la función: cantidad_filmaciones_mes/ (imagen del resultado)
+Este fue mi resultado de la función: recomendacion/ (imagen del resultado)
 <br>
 <br>
 <p align="center">
