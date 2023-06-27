@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-fastapi==0.0.0
-pandas==0.0.0
-flask==0.0.0
-scikit-learn==0.0.0
-uvicorn==0.0.0
-=======
 fastapi
 pandas
 flask
 scikit-learn
 uvicorn
->>>>>>> d82fae4aac99e8a5c545dda6f80170444f5eabc7
+
