@@ -33,7 +33,7 @@ def cantidad_filmaciones_mes(mes: str): #Definimos la función
     #Creamos un manejador de errores, esto por si hay algún problema, en específico con la lectura del archivo
     try:
         #Leemos el archivo CSV y cargargamos los datos
-        enlace = 'Datasets/movies_limpio (real) - copia - copia.csv'
+        enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/movies_limpio%20(real)%20-%20copia%20-%20copia.csv'
         df_movies = pd.read_csv(enlace)
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
@@ -67,7 +67,7 @@ def cantidad_filmaciones_dia(dia: str):
         #Leemos el archivo CSV y cargargamos los datos
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
-        enlace = 'Datasets/movies_limpio (real) - copia - copia.csv'
+        enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/movies_limpio%20(real)%20-%20copia%20-%20copia.csv'
         df_movies = pd.read_csv(enlace)
 
         #Contamos el número de veces que aparece el mes proporcionado por el usuario (lo mismo que la función anterior)
@@ -94,7 +94,7 @@ def score_titulo(titulo_de_la_filmacion: str):
         #Leemos el archivo CSV y cargargamos los datos
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
-        enlace = 'Datasets/movies_limpio (real) - copia - copia.csv'
+        enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/movies_limpio%20(real)%20-%20copia%20-%20copia.csv'
         df_movies = pd.read_csv(enlace)
 
         #Filtramos el DataFrame por el título de la filmación ingresada por el usuario
@@ -121,7 +121,7 @@ def votos_titulo(titulo_de_la_filmacion: str):
         #Leemos el archivo CSV y cargargamos los datos
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
-        enlace = 'Datasets/movies_limpio (real) - copia - copia.csv'
+        enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/movies_limpio%20(real)%20-%20copia%20-%20copia.csv'
         df_movies = pd.read_csv(enlace)
         
         #Filtramos nuestro dataset por el título de la filmación
@@ -151,7 +151,7 @@ def get_actor(nombre_actor: str):
         #Leemos el archivo CSV y cargargamos los datos
         #df_cast = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/cast_2 (con indice).csv', encoding='latin-1')
         #df_cast = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\cast_2 (con indice) - copia.csv', encoding='latin-1')
-        enlace = 'Datasets\cast_2 (con indice) - copia.csv'
+        enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/cast_2%20(con%20indice)%20-%20copia.csv'
         df_cast = pd.read_csv(enlace)
         
         #Filtramos las filas con el nombre del actor ingresado
@@ -164,7 +164,7 @@ def get_actor(nombre_actor: str):
         #Leemos el archivo 'movies.csv' para obtener el retorno y contar las películas
         #df_movies = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/movies_limpio (real) - copia.csv', encoding='latin-1')
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
-        enlace = 'Datasets/movies_limpio (real) - copia - copia.csv'
+        enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/movies_limpio%20(real)%20-%20copia%20-%20copia.csv'
         df_movies = pd.read_csv(enlace)
         
         # Filtrar las filas de las películas en las que el actor participó por el ID del actor
@@ -197,7 +197,7 @@ def get_director(nombre_director: str):
         #Leemos el archivo CSV y cargargamos los datos
         #df_crew = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/crew_2 (con indice).csv', encoding='utf-8')
         #df_crew = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\crew_2 (con indice) - copia.csv', encoding='utf-8')
-        enlace = 'Datasets\crew_2 (con indice) - copia.csv'
+        enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/crew_2%20(con%20indice)%20-%20copia.csv'
         df_crew = pd.read_csv(enlace)
         
         # Filtrar las filas del director deseado por nombre y trabajo como director
@@ -210,7 +210,7 @@ def get_director(nombre_director: str):
         #Leemos el siguiente archivo CSV y cargargamos los datos
         #df_movies = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/movies_limpio (real) - copia.csv', encoding='utf-8')
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv', encoding='utf-8')
-        enlace = 'Datasets/movies_limpio (real) - copia - copia.csv'
+        enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/movies_limpio%20(real)%20-%20copia%20-%20copia.csv'
         df_movies = pd.read_csv(enlace)
 
         # Filtrar las filas de las películas del director por el ID del director
@@ -253,7 +253,7 @@ def get_director(nombre_director: str):
 #Cargamos el conjunto de datos de películas adecuado
 #movies_data = pd.read_csv('F:\Henry\Proyecto 1\PI_ML_OPS\Dataset\limpios\movies_limpio (real) - copia.csv')
 #movies_data = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
-enlace = 'Datasets/movies_limpio (real) - copia - copia.csv'
+enlace = 'https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/Datasets/movies_limpio%20(real)%20-%20copia%20-%20copia.csv'
 movies_data = pd.read_csv(enlace)
 
 #Realizamos el procesamiento de los datos
