@@ -186,8 +186,8 @@ def cantidad_filmaciones_mes(mes: str): #Definimos la función
 Imagen de la vista en la API (captura de la api funcionando, el saludo).
 <br>
 <p align="center">
-<img src="https://github.com/HX-PRomero/PI_ML_OPS/raw/main/src/DiagramaConceptualDelFlujoDeProcesos.png"  height=500>
-</p>
+<img src="https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/src/api_funcionando.png"  height=500>
+</p> 
 <br>
 
 ### DEPLOYMENT
@@ -245,7 +245,7 @@ Este fue mi resultado de la función: recomendacion/ (imagen del resultado)
 <br>
 <br>
 <p align="center">
-<img src="https://github.com/HX-PRomero/PI_ML_OPS/raw/main/src/DiagramaConceptualDelFlujoDeProcesos.png"  height=500>
+<img src="https://github.com/AJusto14/PI_ML_OPS_AAJG/blob/main/src/resultado_recomendacion.png"  height=500>
 </p>
 <br>
 <br>
