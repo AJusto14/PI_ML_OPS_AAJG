@@ -81,7 +81,7 @@ En el aparte de los puntos solicitados, encontrarán un poco de la explicación 
 Cada una de las transformaciones se realizó en Python, con excepción de la primera, que la justificación la encontrarán en el archivo.
 <br>
 <br>
-Imagen de un hallazgo (imagen de la gráfica).
+Imagen de un hallazgo.
 <br><br>
 <p align="center">
 <img src="src/imagen_transformaciones.png"  height=400>
@@ -136,7 +136,7 @@ def cantidad_filmaciones_mes(mes: str): #Definimos la función
 #Fin de nuestra función cantidad_filmaciones_mes *********************************************
 ``` 
 <br>
-Imagen de la vista en la API (captura de la api funcionando, el saludo).
+Imagen de la página de inicio de la API.
 <br><br>
 
 <p align="center">
@@ -207,7 +207,7 @@ Pero, quizá se pregunten, porque no se eligió un algoritmo visto en clase, por
 
 <br>
 
-Este fue mi resultado de la función: **recomendacion/Toy Story** (imagen del resultado)
+Este fue mi resultado de la función: **recomendacion/Toy Story**
 <br>
 <br>
 <p align="center">
