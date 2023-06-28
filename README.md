@@ -86,7 +86,7 @@ Imagen de un hallazgo.
 <p align="center">
 <img src="src/imagen_transformaciones.png"  height=400>
 </p>
-<br><br>
+<br>
 
 ## *Eliminar las columnas que no serán utilizadas, video, imdb_id, adult, original_title, poster_path y homepage.*.
 <br>
