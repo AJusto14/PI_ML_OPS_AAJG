@@ -69,10 +69,10 @@ Se derberá realizar en los datasets proporcionados.
 
 <br>
 
-# SOLUCIONES
+# **SOLUCIONES**
 <br>
 
-### TRANSFORMACIONES
+### **TRANSFORMACIONES**
 <br>
 La realización de las transformaciones las pueden encontrar en el archivo llamado 'limpieza_movies.ipynb'.
 <br>
@@ -82,11 +82,11 @@ Cada una de las transformaciones se realizó en Python, con excepción de la pri
 <br>
 <br>
 Imagen de un hallazgo (imagen de la gráfica).
-<br>
+<br><br>
 <p align="center">
-<img src="https://raw.githubusercontent.com/AJusto14/PI_ML_OPS_AAJG/tree/main/src/imagen_transformaciones.png"  height=500>
+<img src="src/imagen_transformaciones.png"  height=400>
 </p>
-<br>
+<br><br>
 
 ## *Eliminar las columnas que no serán utilizadas, video, imdb_id, adult, original_title, poster_path y homepage.*.
 <br>
@@ -100,7 +100,7 @@ pelis = pelis[['belongs_to_collection', 'budget', 'genres', 'id', 'original_lang
 <br>
 <br>
 
-### DESARROLLO DE LA API
+### **DESARROLLO DE LA API**
 <br>
 El desarrollo de la API se llevó a cabo con la librería FASTAPI, que al no tenerla instalada, de inicio se tuvo que realizar la instalación para poder manejar correctamente lo solicitado.
 <br>
@@ -137,20 +137,30 @@ def cantidad_filmaciones_mes(mes: str): #Definimos la función
 ``` 
 <br>
 Imagen de la vista en la API (captura de la api funcionando, el saludo).
-<br>
+<br><br>
+
 <p align="center">
-<img src="https://raw.githubusercontent.com/AJusto14/PI_ML_OPS_AAJG/tree/main/src/api_funcionando.png"  height=500>
+<img src="src/api_funcionando.png", height=100>
 </p> 
+
+<br><br>
+
+### **DEPLOYMENT**
+<br>
+Esta parte está pendiente, se intentó realizar en diferentes plataformas pero en ninguna resultó efectivo.
+<br><br>
+Hasta que probé con una que aunque el enlace dura solamente dos horas, en el video se puede ver su resultado.<br>
+
+La aplicación que se usó se llama [NGROK](https://ngrok.com/) y es la que se utilisó para realizar la tarea.
+<br>
+<br>
+Vista del deploy.
 <br>
 
-### DEPLOYMENT
-<br>
-Pendiente
-
 <br>
 <br>
 
-### EXPLORATORY DATA ANALYSIS - EDA
+### **EXPLORATORY DATA ANALYSIS - EDA**
 <br>
 Como sabemos el análisis EDA es una parte importante de nuestra actividad como Científicos de Datos, y para esto, en lo personal me guié con las siguientes pautas:<br><br>
 - Comprensión de los datos<br>
@@ -177,12 +187,14 @@ pelis = pelis[['belongs_to_collection', 'budget', 'genres', 'id', 'original_lang
 <br>
 <br>
 
-### SISTEMA DE RECOMENDACIÓN
+### **SISTEMA DE RECOMENDACIÓN**
 <br>
-Para la realización de esta parte, se utilizó un algoritmo que se conoce como "sistema de recomendación basado en contenido". Se decidió esto después de investigar un poco más al respecto, y se concluyó que este algoritmo al utilizar la "similitud de coseno" para el cálculo de la similitud entre las películas en función de sus características de contenido, sería perfecto para lo que necesitaba. <br>
+
+Para la realización de esta parte, se utilizó un algoritmo que se conoce como *"sistema de recomendación basado en contenido"*. Se decidió esto después de investigar un poco más al respecto, y se concluyó que este algoritmo al utilizar la "similitud de coseno" para el cálculo de la similitud entre las películas en función de sus características de contenido, sería perfecto para lo que necesitaba. <br>
 Ademas, con este algorimo recibimos recomiendaciones de las películas más similares a la ingresada por el usuario.<br>
 Este enfoque se utiliza porque permite proporcionar recomendaciones personalizadas basadas en las características del contenido de las películas, en nuestro caso, tomamos la mayoría de las columnas con las que contaba el dataset para realizar la predicción. <br>
-Incluso, al utilizar TF-IDF, se puede identificar la importancia de las categorías y demás información y con eso poder encontrar películas que tengan similitudes con la película que el usuario ingresó.<br>
+
+Incluso, al utilizar **TF-IDF** (Por sus siglas en ingés, *Term Frequency-Inverse Document Frequency* es una técnica utilizada en procesamiento de texto y recuperación de información), se puede identificar la importancia de las categorías y demás información y con eso poder encontrar películas que tengan similitudes con la película que el usuario ingresó.<br>
 <br>
 Pero, quizá se pregunten, porque no se eligió un algoritmo visto en clase, por ejemplo alguno de clasificación, y esto es sencillo, debido a que tenemos tres caracteristicas importantes:
 <br><br>
@@ -194,15 +206,16 @@ Pero, quizá se pregunten, porque no se eligió un algoritmo visto en clase, por
 3. *Interpretación de resultados*: En el enfoque basado en contenido, las recomendaciones se pueden explicar fácilmente al usuario en términos de las características de las películas que influyeron en la recomendación. Esto puede ayudar a generar confianza y comprensión por parte del usuario, ya que las recomendaciones se basan en sus preferencias de género, actores favoritos, etc. En el caso de un enfoque de clasificación, puede ser más difícil explicar las recomendaciones en términos de las razones específicas detrás de ellas.
 
 <br>
-Este fue mi resultado de la función: recomendacion/ (imagen del resultado)
+
+Este fue mi resultado de la función: **recomendacion/Toy Story** (imagen del resultado)
 <br>
 <br>
 <p align="center">
-<img src="https://raw.githubusercontent.com/AJusto14/PI_ML_OPS_AAJG/tree/main/src/resultado_recomendacion.png"  height=500>
+<img src="src/resultado_recomendacion.png"  height=300>
 </p>
 <br>
 <br>
 
-### VIDEO
+### **VIDEO**
 <br>
 Este es el enlace del video de demostración del funcionamiento:
