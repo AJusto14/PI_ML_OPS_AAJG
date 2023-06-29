@@ -165,7 +165,7 @@ def get_actor(nombre_actor: str):
         #df_movies = pd.read_csv('F:/Henry/Proyecto 1/PI_ML_OPS/Dataset/limpios/movies_limpio (real) - copia.csv', encoding='latin-1')
         #df_movies = pd.read_csv('F:\Henry\Proyecto 1\PI_1_Henry_MachineLearningDevops\PI_ML_OPS_AAJG\Datasets\movies_limpio (real) - copia - copia.csv')
         enlace = 'movies.csv'
-        df_movies = pd.read_csv('movies_limpio (real) - copia - copia.csv')
+        df_movies = pd.read_csv('movies.csv')
         
         # Filtrar las filas de las películas en las que el actor participó por el ID del actor
         movies_rows = df_movies[df_movies['id'].isin(actor_rows['id'])]
