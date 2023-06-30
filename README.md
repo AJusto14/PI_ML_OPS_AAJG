@@ -72,7 +72,7 @@ Se derberá realizar en los datasets proporcionados.
 # **SOLUCIONES**
 <br>
 
-### **TRANSFORMACIONES**
+### **TRANSFORMACIONES - ETL**
 <br>
 La realización de las transformaciones las pueden encontrar en el archivo llamado 'limpieza_movies.ipynb'.
 <br>
@@ -147,14 +147,16 @@ Imagen de la página de inicio de la API.
 
 ### **DEPLOYMENT**
 <br>
-Esta parte está pendiente, se intentó realizar en diferentes plataformas pero en ninguna resultó efectivo.
+Esta parte fue muy complicada, se intentó realizar en diferentes plataformas pero en ninguna resultó efectivo.
 <br><br>
-Hasta que probé con una que aunque el enlace dura solamente dos horas, en el video se puede ver su resultado.<br>
+Hasta que se probó con una que aunque el enlace dura solamente dos horas, en el video se puede ver su resultado.<br>
 
-La aplicación que se usó se llama [NGROK](https://ngrok.com/) y es la que se utilisó para realizar la tarea.
+La aplicación que se usó se llama [NGROK](https://ngrok.com/) y es la que se utilisó para realizar la tarea, pero como se tuvieron problemas para mantener el enlace por más de 2 horas en línea, se insistío en Render y se pudo realizar con éxito.
 <br>
 <br>
-Vista del deploy.
+
+Este es el enlace: [Proyecto Render](https://api-pi-ml-dc-pt01.onrender.com/)
+
 <br>
 
 <br>
@@ -184,6 +186,7 @@ pelis = pelis[['belongs_to_collection', 'budget', 'genres', 'id', 'original_lang
        'popularity', 'production_companies', 'production_countries', 'release_date', 'revenue', 'runtime',
        'spoken_languages', 'status', 'tagline', 'title', 'vote_average', 'vote_count']]
 ``` 
+<br>
 <br>
 <br>
 
@@ -218,4 +221,5 @@ Este fue mi resultado de la función: **recomendacion/Toy Story**
 
 ### **VIDEO**
 <br>
-Este es el enlace del video de demostración del funcionamiento:
+
+Este es el enlace del video del proyecto: [Video](https://clipchamp.com/watch/EbPErPc3Gmk)
